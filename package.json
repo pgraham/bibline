@@ -13,6 +13,8 @@
   },
   "homepage": "https://github.com/pgraham/bibline",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.6.0"
   }
 }
