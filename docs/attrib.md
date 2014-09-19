@@ -25,6 +25,8 @@
 
  -  jQuery.dotdotdot
 
+ -  AngularJs
+
 ## Fonts
 
  -  Merriweather Sans
