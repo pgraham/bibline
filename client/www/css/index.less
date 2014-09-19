@@ -61,9 +61,15 @@ body {
 		}
 
 		.presenter {
-			display: inline-block;
+			float: left;
+			margin-right: 0.5em;
 			color: @light-text;
 			font-style: italic;
+
+			&::after {
+				content: "\2014"; // em dash
+				margin-left: 0.5em;
+			}
 		}
 
 		.time {
@@ -77,8 +83,10 @@ body {
 		}
 
 		p, .preview {
-			color: @semi-light-text;
 			height: 3em;
+			margin-top: 0;
+
+			color: @semi-light-text;
 		}
 
 	}
