@@ -25,6 +25,8 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <meta name="msapplication-tap-highlight" content="no" />
 
+        <link rel="stylesheet"
+              href="http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,400italic|Josefin+Slab:600"/>
         <link rel="stylesheet" href="lib/pure-css/pure-min.css"/>
 
         <!-- build:css css/index.css -->
@@ -35,24 +37,27 @@
         <title>Bibline</title>
 
         <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.dotdotdot.min.js"></script>
 
     </head>
     <body>
 
-        <header></header>
+        <header id="header">
+            <h1>Bibline</h1>
+        </header>
 
         <div id="date" class="date">September 19th, 2014</div>
 
         <div id="sessions" class="sessions">
 
             <div class="session">
-                <h2>
+                <h2 class="ellipsis">
                     Efficient Selectivity And Backup Operators in Monte Carlo
                     Tree Search
                 </h2>
                 <div class="presenter">Rémi Coulom</div>
                 <div class="time">00:08 AM</div>
-                <p>
+                <p class="preview ellipsis">
                 Monte-Carlo evaluation consists in estimating a position by
                 averaging the outcome of several random continuations, and can
                 serve as an evaluation function at the leaves of a min-max tree.

@@ -1,5 +1,19 @@
+@dark-text: #222;
+@semi-light-text: #555;
+@light-text: #999;
+
 html, body {
 	height: 100%;
+}
+
+body {
+	font-family: "Merriweather Sans", sans-serif;
+	font-weight: 400;
+	color: @dark-text;
+}
+
+#header {
+	display: none;
 }
 
 #date {
@@ -8,19 +22,64 @@ html, body {
 	left: 0;
 	right: 0;
 
-	height: 12%;
+	&.date {
+		font-family: "Merriweather Sans", sans-serif;
+		font-weight: 800;
+		font-size: 3em;
+
+		color: @light-text;
+
+		padding: 0.3em;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 }
 
 #sessions {
 	position: absolute;
 	top: 1em;
 	right: 0;
-	left: 12%;
-	bottom: 12%; 
+	bottom: 6em; 
 
 	overflow: hidden;
-}
 
-.session {
+	.session {
+		position: relative;
+		margin-left: 24%;
+		margin-bottom: .5em;
 
+		box-sizing: border-box;
+		border: 1px solid #777;
+		border-radius: 5px;
+		padding: 0.5em;
+
+		h2 {
+			height: 1.5em;
+			margin-bottom: 0;
+			font-family: "Josefin Slab", serif;
+			font-weight: 600;
+		}
+
+		.presenter {
+			display: inline-block;
+			color: @light-text;
+			font-style: italic;
+		}
+
+		.time {
+			position: absolute;
+			top: 2em;
+			right: 100%;
+			left: -31.5%; // Don't ask (24%/76% = 32%)
+
+			box-sizing: border-box;
+			padding-right: 1em;
+		}
+
+		p, .preview {
+			color: @semi-light-text;
+			height: 3em;
+		}
+
+	}
 }
