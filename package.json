@@ -1,0 +1,18 @@
+{
+  "name": "bibline",
+  "version": "0.1.0",
+  "description": "Conference App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgraham/bibline.git"
+  },
+  "author": "Philip Graham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgraham/bibline/issues"
+  },
+  "homepage": "https://github.com/pgraham/bibline",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
