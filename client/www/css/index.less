@@ -38,6 +38,7 @@ body {
 #sessions {
 	position: absolute;
 	top: 1em;
+	left: 0;
 	right: 0;
 	bottom: 6em; 
 
@@ -55,7 +56,9 @@ body {
 
 		h2 {
 			height: 1.5em;
+			margin-top: 0;
 			margin-bottom: 0;
+
 			font-family: "Josefin Slab", serif;
 			font-weight: 600;
 		}
@@ -63,8 +66,10 @@ body {
 		.presenter {
 			float: left;
 			margin-right: 0.5em;
+
 			color: @light-text;
 			font-style: italic;
+			font-size: 0.8em;
 
 			&::after {
 				content: "\2014"; // em dash
@@ -84,11 +89,13 @@ body {
 			text-align: right;
 		}
 
-		p, .preview {
+		p {
 			height: 3em;
 			margin-top: 0;
+			margin-bottom: 0;
 
 			color: @semi-light-text;
+			font-size: 0.8em;
 		}
 
 	}

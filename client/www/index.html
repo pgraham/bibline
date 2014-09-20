@@ -50,14 +50,7 @@
         <div id="date" class="date">September 19th, 2014</div>
 
         <div id="sessions" class="sessions">
-
-            <div class="session" ng-repeat="event in events">
-                <h2 class="ellipsis">{{event.title}} </h2>
-                <div class="presenter">{{event.presenter}}</div>
-                <div class="time">{{event.startTime}}</div>
-                <p class="preview ellipsis">{{event.description}} </p>
-            </div>
-
+            <bib-session ng-repeat="event in events"></bib-session>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
