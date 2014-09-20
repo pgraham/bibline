@@ -10,10 +10,7 @@ BIB.directive('bibSession', function () {
 
 	return {
 		restrict: 'E',
-		template: '<div class="session"><h2 class="ellipsis">{{event.title}}</h2>' +
-			'<div class="presenter">{{event.presenter}}</div>' +
-			'<div class="time">{{event.startTime}}</div>' +
-			'<p class="ellipsis">{{event.description}}</p></div>',
+		templateUrl: 'session.html',
 		link: function (scope, element, attrs) {
 			setTimeout(function () {
 				element.find('.ellipsis').dotdotdot();
