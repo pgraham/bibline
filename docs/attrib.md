@@ -21,6 +21,8 @@
 
  -  LessCSS
 
+ -  LESS elements
+
  -  jQuery
 
  -  jQuery.dotdotdot

@@ -31,6 +31,7 @@
 
         <!-- build:css css/index.css -->
         <link rel="stylesheet/less" type="text/css" href="css/index.less"/>
+        <link rel="stylesheet/less" type="text/css" href="css/animations.less"/>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
         <!-- /build -->
 
@@ -49,9 +50,7 @@
 
         <div id="date" class="date">September 19th, 2014</div>
 
-        <div id="sessions" class="sessions">
-            <bib-session ng-repeat="event in events"></bib-session>
-        </div>
+        <bib-session-list sessions="events" class="animate-fade out"></bib-session-list>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

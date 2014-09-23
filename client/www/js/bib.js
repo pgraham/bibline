@@ -6,16 +6,19 @@ BIB.controller('EventListCtrl', function ($scope, $http) {
 	});
 });
 
-BIB.directive('bibSession', function () {
+BIB.directive('bibSessionList', function factory() {
 
 	return {
-		restrict: 'E',
-		templateUrl: 'session.html',
-		link: function (scope, element, attrs) {
+		retrict: 'E',
+		scope: {
+			events: '=sessions'
+		},
+		templateUrl: 'session-list.html',
+		link: function post(scope, element, attrs) {
 			setTimeout(function () {
 				element.find('.ellipsis').dotdotdot();
-			});
+				element.removeClass('out');
+			}, 100);
 		}
 	};
-
 });
