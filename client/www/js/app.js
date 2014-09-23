@@ -1,1 +1,1 @@
-var BIB = angular.module('bibline', [ 'biblineControllers', 'biblineDirectives' ]);
+angular.module('bibline', [ 'biblineControllers', 'biblineDirectives', 'biblineFilters' ]);

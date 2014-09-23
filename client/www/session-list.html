@@ -2,7 +2,7 @@
     <div class="session" ng-repeat="event in events" ng-click="openSession()">
         <h2 class="ellipsis">{{event.title}}</h2>
         <div class="presenter">{{event.presenter}}</div>
-        <div class="time">{{event.startTime}}</div>
+        <div class="time">{{event.timeslot | sessionTime }}</div>
         <p class="ellipsis">{{event.description}}</p>
     </div>
 </div>

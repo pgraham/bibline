@@ -2,37 +2,55 @@
 		{
 			"title": "Efficient Selectivity And Backup Operators in Monte Carlo Tree Search",
 			"presenter": "Rémi Coulom",
-			"startTime": "11:00 AM",
+			"timeslot": {
+				"startTime": "2014-09-19T11:00:00",
+				"endTime": "2014-09-19T12:00:00"
+			},
 			"description": "Monte-Carlo evaluation consists in estimating a position by averaging the outcome of several random continuations, and can serve as an evaluation function at the leaves of a min-max tree. This paper presents a new framework to combine tree search with Monte-Carlo eval-uation, that does not separate between a min-max phase and a Monte-Carlo phase. Instead of backing-up the min-max value close to the root, and the average value at some depth, a more general backup operator is defined that progressively changes from averaging to min-max as the number of simulations grows. This approach provides a fine-grained control of the tree growth, at the level of individual simulations, and allows efficient selectivity methods. This algorithm was implemented in a 9 × 9 Go-playing program, Crazy Stone, that won the 10th KGS computer-Go tournament."
 		},
 		{
 			"title": "Analysis of Three Bayesian Network Inference Algorithms: Variable Elimination, Likelihood Weighting, and Gibbs Sampling",
 			"presenter": "Rose F. Liu, Rusmin SoetjiptoA",
-			"startTime": "12:00 PM",
+			"timeslot": {
+				"startTime": "2014-09-19T12:00:00",
+				"endTime": "2014-09-19T13:00:00"
+			},
 			"description": "In this paper, we describe and analyze three Bayesian  network inference algorithms: variable elimination, likelihood weighting, and Gibbs sampling. Variable Elimination is an exact inference algorithm, while likelihood weighting and gibbs sampling are approximate inference algorithms. For each algorithm we study thier performance under different conditions. In section 2, we analyze variable elimination and study how different elimination orders affect performance. In section 3, we validate and describe our likelihood weghting implementation. In section 4 we analyze Gibbs sampling and experiment with the effect of burn-in (length of the initial prefix that is thrown away) on estimation accuracy. In section 5 we measure the performance of the two approximate inference algorithms in terms of their running times versus the quality of their results. We also draw conclusions on which algorithm is more appropriate for the different bayesian networks. In section 6, we describe another take on the study of how burn-in affects Gibbs sampling performance."
 		},
 		{
 			"title": "The Little Manual of API Design",
 			"presenter": "Jasmin Blanchette",
-			"startTime": "1:00 PM",
+			"timeslot": {
+				"startTime": "2014-09-19T13:00:00",
+				"endTime": "2014-09-19T14:00:00"
+			},
 			"description": "An application programming interface, or API, is the set of symbols that are exported and available to the users of a library to write their applications.  The design of the APIs is arguably the most critical part of designing the library, because it affects the design of the applications built on top of them."
 		},
 		{
 			"title": "Everything You Always Wanted to Know About Synchronization but Were Afraid to Ask",
 			"presenter": "Tudor David, Rachid Guerraoui, Vasileios Trigonakis",
-			"startTime": "2:00 PM",
+			"timeslot": {
+				"startTime": "2014-09-19T14:00:00",
+				"endTime": "2014-09-19T15:00:00"
+			},
 			"description": "This paper presents the most exhaustive study of synchronization to date. We span multiple layers, from hardware cache-coherence protocols up to high-level concurrent software. We do so on different types of architectures, from single-socket – uniform and non-uniform – to multi-socket – directory and broadcast- based – many-cores. We draw a set of observations that, roughly speaking, imply that scalability of synchronization is mainly a property of the hardware."
 		},
 		{
 			"title": "Ideal Hash Trees",
 			"presenter": "Phil Bagwell",
-			"startTime": "3:00 PM",
+			"timeslot": {
+				"startTime": "2014-09-19T15:00:00",
+				"endTime": "2014-09-19T16:00:00"
+			},
 			"description": "Hash Trees with nearly ideal characteristics are described. These Hash Trees require no initial root hash table yet are faster and use significantly less space than chained or double hash trees.  Insert, search and delete times are small and constant, independent of key set size, operations are O(1). Small worst-case times for insert, search and removal operations can be guaranteed and misses cost less than successful searches. Array Mapped Tries(AMT), first described in Fast and Space Efficient Trie Searches, Bagwell [2000], form the underlying data structure. The concept is then applied to external disk or distributed storage to obtain an algorithm that achieves single access searches, close to single access inserts and greater than 80 percent disk block load factors.  Comparisons are made with Linear Hashing, Litwin, Neimat, and Schneider [1993] and B-Trees, R.Bayer and E.M.McCreight [1972]. In addition two further applications of AMTs are briefly described, namely, Class/Selector dispatch tables and IP Routing tables. Each of the algorithms has a performance and space usage that is comparable to contemporary implementations but simpler."
 		},
 		{
 			"title": "Out of the Tar Pit",
 			"presenter": "Ben Moseley",
-			"startTime": "4:00 PM",
-			"description": "Complexity is the single major difficulty in the successful develop- ment of large-scale software systems. Following Brooks we distinguish accidental from essential difficulty, but disagree with his premise that most complexity remaining in contemporary systems is essential. We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data."
+			"timeslot": {
+				"startTime": "2014-09-19T16:00:00",
+				"endTime": "2014-09-19T17:00:00"
+			},
+			"description": "Complexity is the single major difficulty in the successful development of large-scale software systems. Following Brooks we distinguish accidental from essential difficulty, but disagree with his premise that most complexity remaining in contemporary systems is essential. We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data."
 		}
 	]
