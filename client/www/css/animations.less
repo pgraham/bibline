@@ -7,3 +7,41 @@
 .animate-fade.out {
 	.opacity(0);
 }
+
+.view-animate, .session-list-view, .session-details-view {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.view-animate.ng-enter,
+.view-animate.ng-leave,
+.view-animate.ng-enter div,
+.view-animate.ng-leave div {
+	.transition(0.3s, ease-out);
+}
+
+.view-animate.ng-enter .session-list-view {
+	.translate(-100%, 0);
+}
+.view-animate.ng-enter .session-details-view {
+	.translate(100%, 0);
+}
+
+.view-animate.ng-enter.ng-enter-active .session-list-view,
+.view-animate.ng-enter.ng-enter-active .session-details-view {
+	.translate(0, 0);
+}
+
+.view-animate.ng-leave .session-list-view,
+.view-animate.ng-leave .session-details-view {
+	.translate(0, 0);
+}
+.view-animate.ng-leave.ng-leave-active .session-list-view {
+	.translate(-100%, 0);
+}
+.view-animate.ng-leave.ng-leave-active .session-details-view {
+	.translate(100%, 0);
+}

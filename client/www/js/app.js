@@ -5,23 +5,29 @@ var bibline = angular.module('bibline', [
 	'biblineDirectives',
 	'biblineFilters',
 	'biblineServices',
-	'ngRoute'
+	'ngRoute',
+	'ngAnimate'
 ]);
 
 angular.module('biblineServices', []);
 
-bibline.config([ '$routeProvider', function ($routeProvider) {
-	$routeProvider
-		.when('/', {
-			templateUrl: 'session-list-view.html',
-			controller: 'SessionListCtrl'
-		})
-		.when('/session/:sessionId', {
-			templateUrl: 'session-details-view.html',
-			controller: 'SessionCtrl'
-		})
-		.otherwise({
-			redirectTo: '/'
-		});
+bibline.config([
+	'$routeProvider',
+	'$locationProvider',
+	function ($routeProvider, $locationProvider) {
+		$routeProvider
+			.when('/', {
+				templateUrl: 'session-list-view.html',
+				controller: 'SessionListCtrl'
+			})
+			.when('/session/:sessionId', {
+				templateUrl: 'session-details-view.html',
+				controller: 'SessionCtrl'
+			})
+			.otherwise({
+				redirectTo: '/'
+			});
 
-} ]);
+		$locationProvider.html5Mode(true);
+	}
+]);
