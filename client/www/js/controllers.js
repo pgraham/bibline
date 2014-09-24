@@ -1,15 +1,39 @@
 "use strict";
 
-angular.module('biblineControllers', [])
+var controllers = angular.module('biblineControllers', []);
 
-	.controller('EventListCtrl', function ($scope, $http) {
-		$scope.dateFormat = 'MMMM Do, YYYY';
-		$scope.currentEvent = null;
+controllers.controller('MainCtrl', function ($scope) {
 
-		$http.get('data/events.json').success(function (data) {
-			// TODO Sort events by timeslot.startTime in reverse order
-			$scope.currentEvent = data[0];
-			$scope.events = data;
-		});
-	});
+});
 
+controllers.controller('SessionListCtrl', function ($scope, $location, sessionSrvc) {
+	$scope.dateFormat = 'MMMM Do, YYYY';
+	$scope.currentEvent = null;
+
+	$scope.openSession = function (session) {
+		$location.path('/session/' + session.id)
+	};
+
+	$scope.$watch(
+		function () { return sessionSrvc.getSessions();  },
+		function (sessions) {
+			$scope.sessions = sessions;
+			if (sessions) {
+				$scope.currentSession = sessions[0];
+			} else {
+				$scope.currentSession = null;
+			}
+		}
+	);
+});
+
+controllers.controller('SessionCtrl', function ($scope, $routeParams, sessionSrvc) {
+
+	$scope.$watch(
+		function () { return $routeParams['sessionId']; },
+		function (sessionId) {
+			$scope.session = sessionSrvc.getSession(sessionId);
+		}
+	);
+
+});
