@@ -27,6 +27,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         if (isRunningPhonegap()) {
+            console.log("Phonegap");
             document.addEventListener('deviceready', this.onDeviceReady, false);
         } else {
             $(document).ready(this.onDeviceReady);
@@ -37,5 +38,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        angular.bootstrap(document, [ 'bibline' ]);
     }
 };

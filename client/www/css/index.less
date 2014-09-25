@@ -19,14 +19,24 @@ body {
 	display: none;
 }
 
-.view-animate-container {
+.view-animate-container,
+.view-animate,
+.session-list-view,
+.session-details-view {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
 
+.view-animate-container {
 	overflow: hidden;
+}
+
+.session-list-view {
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .session-date {
@@ -68,27 +78,15 @@ body {
 
 		h2 {
 			height: 1.5em;
-			line-height: 1.5em;
 			margin-top: 0;
 			margin-bottom: 0;
 
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
 			font-family: "Josefin Slab", serif;
 			font-weight: 600;
-		}
-
-		.presenter {
-			float: left;
-			margin-right: 0.5em;
-
-			color: @light-text;
-			font-style: italic;
-			font-size: 1em;
-			line-height: 1.2em;
-
-			&::after {
-				content: "\2014"; // em dash
-				margin-left: 0.5em;
-			}
 		}
 
 		.time {
@@ -103,14 +101,34 @@ body {
 			text-align: right;
 		}
 
-		p {
-			height: 3.6em;
-			margin-top: 0;
-			margin-bottom: 0;
+		.preview {
+			overflow: hidden;
+			text-overflow: ellipsis;
 
-			color: @semi-light-text;
-			font-size: 1em;
-			line-height: 1.2em;
+			.presenter {
+				float: left;
+				margin-right: 0.5em;
+				line-height: 1.2em;
+
+				color: @light-text;
+				font-style: italic;
+				font-size: 1em;
+
+				&::after {
+					content: "\2014"; // em dash
+					margin-left: 0.5em;
+				}
+			}
+
+			p {
+				height: 3.6em;
+				margin-top: 0;
+				margin-bottom: 0;
+
+				color: @semi-light-text;
+				font-size: 1em;
+				line-height: 1.2em;
+			}
 		}
 
 	}

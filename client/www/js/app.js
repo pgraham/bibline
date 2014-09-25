@@ -15,13 +15,16 @@ bibline.config([
 	'$routeProvider',
 	'$locationProvider',
 	function ($routeProvider, $locationProvider) {
+		if (isRunningPhonegap()) {
+			$('base').attr('href', '/android_asset/www/');
+		}
 		$routeProvider
 			.when('/', {
-				templateUrl: 'session-list-view.html',
+				templateUrl: 'tmpl/session-list-view.html',
 				controller: 'SessionListCtrl'
 			})
 			.when('/session/:sessionId', {
-				templateUrl: 'session-details-view.html',
+				templateUrl: 'tmpl/session-details-view.html',
 				controller: 'SessionCtrl'
 			})
 			.otherwise({

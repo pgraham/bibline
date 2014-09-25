@@ -1,0 +1,14 @@
+<div class="session-list-view">
+	<div class="session-date"></div>
+	<div class="session-list">
+			<div class="session" ng-repeat="session in sessions"
+					ng-click="openSession(session)">
+					<h2>{{session.title}}</h2>
+					<div class="time">{{session.timeslot | sessionTime }}</div>
+					<div class="preview">
+						<div class="presenter">{{session.presenter}}</div>
+						<p>{{session.description}}</p>
+					</div>
+			</div>
+	</div>
+</div>
