@@ -27,7 +27,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         if (isRunningPhonegap()) {
-            console.log("Phonegap");
             document.addEventListener('deviceready', this.onDeviceReady, false);
         } else {
             $(document).ready(this.onDeviceReady);
