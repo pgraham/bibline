@@ -6,30 +6,17 @@
 
 ## Dependencies
 
- -  Apache Cordova
+ -  [LessCSS](http://lesscss.org/) - [Apache 2](https://github.com/less/less.js/blob/master/LICENSE)
 
- -  Phonegap
+ -  [LESS elements](http://lesselements.com/) - [Public Domain](https://github.com/dmitryf/elements)
 
- -  Grunt
+ -  [jQuery](https://github.com/dmitryf/elements) - [MIT](https://jquery.org/license/)
 
-    ### Plugins
+ -  [AngularJs](https://angularjs.org/) - [MIT](https://github.com/angular/angular.js/blob/master/LICENSE)
 
-     -  grunt-contrib-clean
-     -  grunt-contrib-copy
-     -  grunt-contrib-less
-     -  grunt-processhtml
+ -  [angular-swipe](https://github.com/marmorkuchen-net/angular-swipe/) - [MIT](https://github.com/marmorkuchen-net/angular-swipe/blob/master/LICENSE.txt)
 
- -  LessCSS
+### Fonts
 
- -  LESS elements
-
- -  jQuery
-
- -  jQuery.dotdotdot
-
- -  AngularJs
-
-## Fonts
-
- -  Merriweather Sans
- -  Josefin Sans
+ -  [Merriweather Sans](http://sorkintype.com/fonts.html#mws) - [OFL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+ -  [Josefin Sans](https://www.google.com/fonts/specimen/Josefin+Slab) - [OFL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
