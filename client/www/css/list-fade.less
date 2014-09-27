@@ -2,10 +2,6 @@
 
 @list-size: 6;
 
-/*@max-width: 76%;*/
-/*@min-width: 50%;*/
-/*@width-step: (@max-width - @min-width) / (@list-size - 1);*/
-
 @max-opacity: 1;
 @min-opacity: 0.25;
 @opacity-step: (@max-opacity - @min-opacity) / (@list-size - 1);
@@ -22,9 +18,6 @@
 		.opacity(@max-opacity - (@opacity-step * @step));
 		margin-left: @max-offset - (@offset-step * (@idx - 1));
 
-		/*@width: @max-width - (@width-step * @step);*/
-		/*width: @width;*/
-		/*margin-left: @max-width - @width;*/
 	}
 
 	.session:nth-child(6) {
