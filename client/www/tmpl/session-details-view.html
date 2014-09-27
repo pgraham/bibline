@@ -2,7 +2,10 @@
 	<div class="session-details">
 		<h2>{{session.title}}</h2>
 		<div class="presenter">{{session.presenter}}</div>
-		<div class="time">{{session.timeslot | sessionTime }}</div>
+		<div class="time">{{ session.timeslot.startTime | date: 'EEE MMM d, yyyy' }}
+			{{ session.timeslot.startTime | date : 'H:mm'}} &mdash;
+			{{ session.timeslot.endTime | date: 'H:mm' }}
+		</div>
 		<p class="ellipsis">{{session.description}}</p>
 	</div>
 </div>

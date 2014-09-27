@@ -136,6 +136,38 @@ body {
 	}
 }
 
-.session-details {
+.session-details-view {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: 1em;
 	padding: 1em;
+	border: 1px solid #777;
+	.rounded(5px);
+
+	.session-details {
+		position: absolute;
+		top: 1em;
+		bottom: 2em;
+		left: 1em;
+		right: 1em;
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0.25em;
+		}
+
+		.presenter {
+			color: @light-text;
+			margin-bottom: 1em;
+		}
+
+		.time {
+			font-weight: 800;
+		}
+	}
+
 }
