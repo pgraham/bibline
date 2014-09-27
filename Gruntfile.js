@@ -50,10 +50,16 @@ module.exports = function (grunt) {
 						expand: true,
 						cwd: '<%= clientPath %>/www/css/',
 						src: [ '**/*.less' ],
-						dest: '<%= buildPath %>/www/css/',
+						dest: '<%= workPath %>/www/css/',
 						ext: '.css'
 					}
 				]
+			}
+		},
+		concat: {
+			client: {
+				src: [ '<%= workPath %>/www/css/**/*.css' ],
+				dest: '<%= buildPath %>/www/css/app.css'
 			}
 		},
 		processhtml: {
@@ -68,7 +74,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-processhtml');
 
-	grunt.registerTask('default', [ 'clean', 'copy', 'less', 'processhtml' ]);
+	grunt.registerTask('default', [ 'clean', 'copy', 'less', 'concat', 'processhtml' ]);
 };
