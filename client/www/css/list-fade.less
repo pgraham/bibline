@@ -10,6 +10,9 @@
 @min-offset: 20%;
 @offset-step: (@max-offset - @min-offset) / (@list-size - 1);
 
+@current-height: 50%;
+@other-height: (90 - @current-height) / (@list-size - 1);
+
 .session-list {
 
 	.session-fade(@idx) {
@@ -17,11 +20,16 @@
 
 		.opacity(@max-opacity - (@opacity-step * @step));
 		margin-left: @max-offset - (@offset-step * (@idx - 1));
+	}
 
+	.session {
+		height: @other-height;
+		width: 80%;
 	}
 
 	.session:nth-child(6) {
 		.session-fade(6);
+		height: @current-height;
 	}
 
 	.session:nth-child(5) {
