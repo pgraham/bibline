@@ -21,4 +21,4 @@ This is a Phonegap application. A Phonegap development environment is expected.
 
 There is a grunt build for this project. To use the grunt build you will first
 need to [install Grunt](http://gruntjs.com/installing-grunt) and run `npm
-install`. View the [Gruntfile.js]() for more details.
+install`. View the [Gruntfile.js](Gruntfile.js) for more details.
