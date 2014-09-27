@@ -4,6 +4,8 @@
 @dark-text: #222;
 @semi-light-text: #555;
 @light-text: #999;
+@registered-color: #10BA10;
+@registered-text-color: #FFF;
 
 html, body {
 	height: 100%;
@@ -84,6 +86,7 @@ body {
 			height: 1em;
 			margin-top: 0;
 			margin-bottom: 0;
+			margin-right: 1.5em;
 
 			white-space: nowrap;
 			overflow: hidden;
@@ -133,6 +136,27 @@ body {
 			}
 		}
 
+		.tags {
+			position: absolute;
+			top: 0.5em;
+			right: 0.5em;
+
+			.registered {
+				color: @registered-text-color;
+				background-color: @registered-color;
+				width: 0.8em;
+				height: 0.8em;
+
+				font-size: 0.8em;
+				padding: 0.2em;
+				.rounded(0.5em);
+			}
+		}
+
+		&.transparent {
+			border-color: transparent;
+		}
+
 	}
 }
 
@@ -167,6 +191,34 @@ body {
 
 		.time {
 			font-weight: 800;
+		}
+	}
+
+	.actions {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 3em;
+
+		padding: 1em;
+		text-align: right;
+
+		button {
+			.rounded(5px);
+			border: 1px solid @registered-text-color;
+			color: @registered-text-color;
+			padding: 0.5em 1.5em;
+			font-size: 1.5em;
+			width: 33%;
+
+			&.register {
+				background-color: @registered-color;
+			}
+
+			&.unregister {
+				background-color: #999;
+			}
 		}
 	}
 
