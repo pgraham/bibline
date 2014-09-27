@@ -6,7 +6,9 @@ var bibline = angular.module('bibline', [
 	'biblineFilters',
 	'biblineServices',
 	'ngRoute',
-	'ngAnimate'
+	'ngAnimate',
+	'ngTouch',
+	'swipe'
 ]);
 
 angular.module('biblineServices', []);

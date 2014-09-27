@@ -1,14 +1,19 @@
 <div class="session-list-view">
 	<div class="session-date"></div>
-	<div class="session-list">
-			<div class="session" ng-repeat="session in sessions"
-					ng-click="openSession(session)">
-					<h2>{{session.title}}</h2>
-					<div class="time">{{session.timeslot | sessionTime }}</div>
-					<div class="preview">
-						<div class="presenter">{{session.presenter}}</div>
-						<p>{{session.description}}</p>
-					</div>
+	<div class="session-list" ng-swipe-up="prev()" ng-swipe-down="next()">
+
+		<div class="session"
+					ng-repeat="session in listView"
+					ng-click="openSession(session)"
+					ng-class="{ transparent: session.id == -1 }">
+
+			<h2 ng-if="session.id >= 0">{{session.title}}</h2>
+			<div class="time" ng-if="session.id >= 0">{{session.timeslot | sessionTime }}</div>
+			<div class="preview" ng-if="session.id >= 0">
+				<div class="presenter">{{session.presenter}}</div>
+				<p>{{session.description}}</p>
 			</div>
+
+		</div>
 	</div>
 </div>

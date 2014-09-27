@@ -13,6 +13,8 @@
 @current-height: 50%;
 @other-height: (90 - @current-height) / (@list-size - 1);
 
+@duration: 0.2s;
+
 .session-list {
 
 	.session-fade(@idx) {
@@ -51,4 +53,81 @@
 	.session:nth-child(1) {
 		.session-fade(1);
 	}
+
+	.session:nth-child(7) {
+		.session-fade(4);
+	}
+
+	.session:nth-child(8) {
+		.session-fade(3);
+	}
+
+	.session.ng-move,
+	.session.ng-enter,
+	.session.ng-leave {
+		.transition(@duration, ease-in);
+	}
+
+	// List items that are moving
+	&.list-animate.list-animate-active .session {
+		.transition(@duration, ease-in);
+	}
+
+	&.list-animate.animate-next {
+		.session:nth-child(-n+6) {
+			.translate(@offset-step, -100%);
+		}
+
+		.session:nth-child(6) {
+			height: @other-height;
+		}
+
+		.session:nth-child(7) {
+			.translate(@offset-step * -2, -16%);
+			height: @current-height;
+		}
+
+		.session:nth-child(8) {
+			.translate(@offset-step * -1, -100%);
+		}
+	}
+
+	&.list-animate.list-animate-active.animate-next {
+		.session:nth-child(-n+8) {
+			.translate(0, 0);
+		}
+		.session:nth-child(-n+5),
+		.session:nth-child(n+7) {
+			height: @other-height;
+		}
+		.session:nth-child(6) {
+			height: @current-height;
+		}
+	}
+
+	&.list-animate.animate-prev {
+		.session:nth-child(-n+8) {
+			.translate(0, 0);
+		}
+	}
+
+	&.list-animate.list-animate-active.animate-prev {
+		.session:nth-child(-n+6) {
+			.translate(@offset-step, -100%);
+		}
+
+		.session:nth-child(6) {
+			height: @other-height;
+		}
+
+		.session:nth-child(7) {
+			.translate(@offset-step * -2, -100%);
+			height: @current-height;
+		}
+
+		.session:nth-child(8) {
+			.translate(@offset-step * -1, -100%);
+		}
+	}
+
 }
