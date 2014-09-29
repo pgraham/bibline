@@ -9,7 +9,7 @@ services.factory('sessionSrvc', function ($http) {
 
 	var sessions;
 
-	$http.get('data/events.json').success(function (data) {
+	$http.get('data/sessions.json').success(function (data) {
 		// Assign an ID to each session. The index of the session in the array is
 		// used as the id. Normally this would be specified by a remote data source.
 		for (var i = 0, len = data.length; i < len; i++) {
