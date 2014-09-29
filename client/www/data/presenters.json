@@ -1,0 +1,65 @@
+[
+	{
+		"id": 0,
+		"displayName": "Rémi Coulom",
+		"picture": "http://remi.coulom.free.fr/Remi-Coulom.jpg",
+		"website": "http://remi.coulom.free.fr/",
+		"bio": "I am a freelance programmer in the field of artificial intelligence in games. My software is available for sale thanks to a partnership with Unbalance."
+	},
+	{
+		"id": 1,
+		"displayName": "Rose F. Liu",
+		"picture": null,
+		"website": null,
+		"bio": null
+	},
+	{
+		"id": 2,
+		"displayName": "Rusmin Soetjipto"
+		"picture": null,
+		"website": null,
+		"bio": null
+	},
+	{
+		"id": 3,
+		"displayName": "Jasmin Blanchette",
+		"picture": "http://www21.in.tum.de/~blanchet/blanchette2012.png",
+		"website": "http://www21.in.tum.de/~blanchet/",
+		"bio": "I am a postdoc at the Chair for Logic and Verification lead by Tobias Nipkow at the Technische Universität München, which I joined in 2008. My research focuses on the generation of counterexamples for higher-order logic (Nitpick) and the use of first-order automatic theorem provers in a higher-order theorem prover (Sledgehammer). I am financed by the project Hardening the Hammer (DFG Ni 491/14-1). From 2000 to 2008, I worked as software engineer and documentation manager for Trolltech (now Digia, Qt) in Oslo, Norway."
+	},
+	{
+		"id": 4,
+		"displayName": "Tudor David",
+		"picture": "http://people.epfl.ch/cgi-bin/people/getPhoto?id=199587&show=",
+		"website": "http://people.epfl.ch/tudor.david",
+		"bio": "Starting from September 2012, I am a PhD candidate in the Distributed Programming Laboratory at EPFL, under the supervision of Prof. Rachid Guerraoui.\n\n My current interests lie in concurrent system and synchronization mechanism design in the context of modern hardware."
+	},
+	{
+		"id": 5,
+		"displayName": "Rachid Guerraoui",
+		"picture": "http://lpd.epfl.ch/rachid/rachid2.jpg",
+		"website": "http://lpdwww.epfl.ch/rachid/",
+		"bio": "I have also been affiliated with the Research Center of Ecole des Mines de Paris, the Commissariat a l'Energie Atomique in Saclay, Hewlett-Packard Laboratories in Palo Alto and the Massachusetts Institute of Technology.\n\nMy research is devoted to concurrent and distributed programming, from multiprocessors to wide-area networks."
+	},
+	{
+		"id": 6,
+		"displayName": "Vasileios Trigonakis",
+		"picture": "http://trigonakis.com/images/personal/small/profile/profile-6.jpg",
+		"website": "http://trigonakis.com/",
+		"bio": "My name is Vasileios Trigonakis and I come from Greece.  I am a 3rd year PhD. Candidate at École Polytechnique Fédérale de Lausanne (EPFL), Switzerland. I am affiliated with the Distributed Programming Laboratory (LPD), under the supervision of Prof. Rachid Guerraoui. I am currently working on the areas of concurrent programming and distributed systems. More precisely, I am mainly interested in synchronization on multi and many-cores. I work on the intersection of software and hardware in order to better understand the intricacies of synchronization.\n\nIn 2011, I completed the Software Engineer of Distributed Systems MSc.  program of the Royal Institute of Technology (KTH), Sweden. As a part of my studies, I did an internship at the Distributed Programming Lab of EPFL with the title \"Design of a Distributed Transactional Memory System for Many-cores\". The internship resulted in a EuroSys '12 paper entitled \"TM2C: a Software Transactional Memory for Many-cores\". After the completion of my internship, I continued working with the LPD lab as a doctoral student. Before that, I studied in the National Technical University of Athens (NTUA), Greece, where I received my diploma in Electrical & Computer Engineering in 2008 with a major in Information Technology (IT).'"
+	},
+	{
+		"id": 7,
+		"displayName": "Phil Bagwell",
+		"picture": "https://res.cloudinary.com/skillsmatter/image/upload/c_thumb,g_face,h_127,w_127/v1389980299/arsracn4l8l22ew41qs6.png",
+		"website": null,
+		"bio": null
+	},
+	{
+		"id": 8,
+		"displayName": "Ben Moseley",
+		"picture": "http://research.engineering.wustl.edu/~bmoseley/images/me.jpg",
+		"website": "http://research.engineering.wustl.edu/~bmoseley/",
+		"bio": "I am currently an Assistant Professor in the Department of Computer Science and Engineering at Washington University in St. Louis. I work in the theoretical computer science (TCS) group at WashU. I received my PhD from the University of Illinois and was advised by Chandra Chekuri. Previously, from 2012-2014 I was a Research Assistant Professor at the Toyota Technological Institute at Chicago. I also did a summer sabbatical at Sandia National Laboratories in 2013 and I was an intern at Yahoo Labs during the summers of 2010 and 2011."
+	}
+]
