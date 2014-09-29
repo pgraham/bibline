@@ -1,5 +1,5 @@
 /**
- * Data session to store conference session objects.
+ * Data service to store conference session objects.
  */
 "use strict";
 
