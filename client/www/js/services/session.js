@@ -10,10 +10,9 @@ services.factory('sessionSrvc', function ($http) {
 	var sessions;
 
 	$http.get('data/sessions.json').success(function (data) {
-		// Assign an ID to each session. The index of the session in the array is
-		// used as the id. Normally this would be specified by a remote data source.
+		// A user's registered status would likely be loaded from a remote data
+		// source along with the rest of the session data
 		for (var i = 0, len = data.length; i < len; i++) {
-			data[i].id = i;
 			data[i].registered = false;
 		}
 
