@@ -15,7 +15,7 @@
 	},
 	{
 		"id": 2,
-		"displayName": "Rusmin Soetjipto"
+		"displayName": "Rusmin Soetjipto",
 		"picture": null,
 		"website": null,
 		"bio": null
@@ -32,7 +32,7 @@
 		"displayName": "Tudor David",
 		"picture": "http://people.epfl.ch/cgi-bin/people/getPhoto?id=199587&show=",
 		"website": "http://people.epfl.ch/tudor.david",
-		"bio": "Starting from September 2012, I am a PhD candidate in the Distributed Programming Laboratory at EPFL, under the supervision of Prof. Rachid Guerraoui.\n\n My current interests lie in concurrent system and synchronization mechanism design in the context of modern hardware."
+		"bio": "Starting from September 2012, I am a PhD candidate in the Distributed Programming Laboratory at EPFL, under the supervision of Prof. Rachid Guerraoui.\n\nMy current interests lie in concurrent system and synchronization mechanism design in the context of modern hardware."
 	},
 	{
 		"id": 5,

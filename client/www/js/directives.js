@@ -67,3 +67,31 @@ directives.directive('sessionList', function factory($timeout) {
 		}
 	};
 })
+
+directives.directive('bibPresenterList', function (presenterSrvc) {
+
+	function getNames(presenters) {
+		var presenter, names = [];
+		for (var i = 0, len = presenters.length; i < len; i++) {
+			presenter = presenterSrvc.getPresenter(presenters[i]);
+
+			if (presenter) {
+				names.push(presenter.displayName);
+			}
+		}
+		return names;
+	}
+
+	return {
+		restrict: 'A',
+		link: function post(scope, element, attrs) {
+			var presenters = scope.$eval(attrs.bibPresenterList);
+
+			element.text(getNames(presenters).join(', '));
+			scope.$on('presenterModel::update', function () {
+				element.text(getNames(presenters).join(', '));
+			});
+		}
+	}
+
+});

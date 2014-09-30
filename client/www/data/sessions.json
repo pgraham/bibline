@@ -3,6 +3,7 @@
 		"id": 1,
 		"title": "Efficient Selectivity And Backup Operators in Monte Carlo Tree Search",
 		"presenter": "Rémi Coulom",
+		"presenters": [ 0 ],
 		"timeslot": {
 			"startTime": "2014-09-18T11:00:00",
 			"endTime": "2014-09-18T12:00:00"
@@ -13,6 +14,7 @@
 		"id": 2,
 		"title": "Efficient Selectivity And Backup Operators in Monte Carlo Tree Search",
 		"presenter": "Rémi Coulom",
+		"presenters": [ 0 ],
 		"timeslot": {
 			"startTime": "2014-09-19T11:00:00",
 			"endTime": "2014-09-19T12:00:00"
@@ -23,6 +25,7 @@
 		"id": 3,
 		"title": "Analysis of Three Bayesian Network Inference Algorithms: Variable Elimination, Likelihood Weighting, and Gibbs Sampling",
 		"presenter": "Rose F. Liu, Rusmin Soetjipto",
+		"presenters": [ 1, 2 ],
 		"timeslot": {
 			"startTime": "2014-09-19T12:00:00",
 			"endTime": "2014-09-19T13:00:00"
@@ -33,6 +36,7 @@
 		"id": 4,
 		"title": "The Little Manual of API Design",
 		"presenter": "Jasmin Blanchette",
+		"presenters": [ 3 ],
 		"timeslot": {
 			"startTime": "2014-09-19T13:00:00",
 			"endTime": "2014-09-19T14:00:00"
@@ -43,6 +47,7 @@
 		"id": 5,
 		"title": "Everything You Always Wanted to Know About Synchronization but Were Afraid to Ask",
 		"presenter": "Tudor David, Rachid Guerraoui, Vasileios Trigonakis",
+		"presenters": [ 4, 5, 6 ],
 		"timeslot": {
 			"startTime": "2014-09-19T14:00:00",
 			"endTime": "2014-09-19T15:00:00"
@@ -53,6 +58,7 @@
 		"id": 6,
 		"title": "Ideal Hash Trees",
 		"presenter": "Phil Bagwell",
+		"presenters": [ 7 ],
 		"timeslot": {
 			"startTime": "2014-09-19T15:00:00",
 			"endTime": "2014-09-19T16:00:00"
@@ -63,6 +69,7 @@
 		"id": 7,
 		"title": "Out of the Tar Pit",
 		"presenter": "Ben Moseley",
+		"presenters": [ 8 ],
 		"timeslot": {
 			"startTime": "2014-09-19T16:00:00",
 			"endTime": "2014-09-19T17:00:00"
@@ -73,6 +80,7 @@
 		"id": 8,
 		"title": "Out of the Tar Pit",
 		"presenter": "Ben Moseley",
+		"presenters": [ 8 ],
 		"timeslot": {
 			"startTime": "2014-09-19T16:00:00",
 			"endTime": "2014-09-19T17:00:00"
