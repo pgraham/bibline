@@ -70,17 +70,22 @@ body {
 
 	.session {
 		position: relative;
-		box-sizing: border-box;
 		margin-left: 24%;
 		margin-bottom: 0.5em;
 
-		overflow: hidden;
 
 		border: 1px solid #777;
 		.rounded(5px);
-		padding: 0.5em;
 
 		background-color: rgba(255, 250, 239, 0.8);
+
+		.session-container {
+			overflow: hidden;
+			height: 100%;
+
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
 
 		h2 {
 			height: 1em;
