@@ -1,0 +1,38 @@
+/*
+ * Mixin for elements that fill their offset parent.
+ */
+.fit() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/*
+ * Mixin for the top element in a vertical split view.
+ *
+ * @param split The distance from the bottom of the offset parent where the
+ * split occurs.
+ */
+.v-split-top(@split) {
+	position: absolute;
+	top: 0;
+	bottom: @split;
+	left: 0;
+	right: 0;
+}
+
+/*
+ * Mixin for the bottom element in a vertical split view.
+ *
+ * @param split
+ *   The distance from the bottom of the offset parent where the split occurs.
+ */
+.v-split-bottom(@split) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: @split;
+}

@@ -7,7 +7,19 @@
 			{{ session.timeslot.endTime | date: 'H:mm' }}
 		</div>
 		<p class="ellipsis">{{session.description}}</p>
+
+		<div class="presenters">
+			<div class="presenter" ng-repeat="presenter in session.presenters">
+				<img src="{{ presenter.picture }}"/>
+				<h3>{{ presenter.displayName }}</h3>
+				<a href="{{ presenter.website }}">Website</a>
+				<p class="bio">{{ presenter.bio }}</p>
+			</div>
+		</div>
+
 	</div>
+
+
 	<div class="actions">
 		<button ng-click="toggleRegister(session)" ng-class="{ register: !session.registered, unregister: session.registered }">
 			{{ session.registered ? 'Unregister' : 'Register' }}

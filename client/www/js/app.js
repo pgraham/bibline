@@ -1,38 +1,39 @@
-"use strict";
+require.config({
+	paths: {
+		'q': '../lib/bower_components/q/q.js',
+		'path': '../lib/bower_components/pathjs/path',
 
-var bibline = angular.module('bibline', [
-	'biblineControllers',
-	'biblineDirectives',
-	'biblineFilters',
-	'biblineServices',
-	'ngRoute',
-	'ngAnimate',
-	'ngTouch',
-	'swipe'
-]);
+		'domReady': '../lib/domReady',
+		'jquery': '../lib/jquery-2.1.3.min',
 
-angular.module('biblineServices', []);
-
-bibline.config([
-	'$routeProvider',
-	'$locationProvider',
-	function ($routeProvider, $locationProvider) {
-		if (isRunningPhonegap()) {
-			$('base').attr('href', '/android_asset/www/');
+		'react': '../lib/react-with-addons-0.12.2',
+		'JSXTransformer': '../lib/JSXTransformer-custom-require',
+		'jsx': '../lib/jsx',
+		'text': '../lib/text'
+	},
+	shim: {
+		'path': {
+			exports: 'Path'
 		}
-		$routeProvider
-			.when('/', {
-				templateUrl: 'tmpl/session-list-view.html',
-				controller: 'SessionListCtrl'
-			})
-			.when('/session/:sessionId', {
-				templateUrl: 'tmpl/session-details-view.html',
-				controller: 'SessionCtrl'
-			})
-			.otherwise({
-				redirectTo: '/'
-			});
-
-		$locationProvider.html5Mode(true);
+	},
+	jsx: {
+		fileExtension: '.jsx'
 	}
-]);
+});
+
+require([ 'routes', 'domReady' ], function (routes, domReady) {
+
+	function isRunningPhonegap() {
+		return (window.cordova || window.PhoneGap || window.phonegap)
+		&& /^file:\/{3}[^\/]/i.test(window.location.href)
+		&& /ios|iphone|ipod|ipad|android/i.test(navigator.userAgent);
+	}
+
+	// Pop and render the initial route
+	if (isRunningPhonegap()) {
+		document.addEventListener('deviceready', routes.init, false);
+	} else {
+		domReady(routes.init);
+	}
+
+});

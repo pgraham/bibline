@@ -1,0 +1,15 @@
+{
+  "name": "bibline",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pgraham/bibline",
+  "description": "Conference mobile app",
+  "authors": [
+    "Philip Graham"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "pathjs": "*",
+    "q": "1.0.1"
+  }
+}
